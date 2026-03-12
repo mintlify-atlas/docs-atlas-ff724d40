@@ -1,0 +1,99 @@
+{
+  "projectType": "framework",
+  "projectName": "CoW Protocol Solver Template",
+  "projectDescription": "A Python framework for building custom solvers for CoW Protocol batch auctions.",
+  "theme": "aspen",
+  "primaryColor": "#040404",
+  "lightColor": "#7c7c7c",
+  "darkColor": "#c2c2c2",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "installation"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/batch-auctions",
+              "concepts/orders",
+              "concepts/tokens",
+              "concepts/amms"
+            ]
+          },
+          {
+            "group": "Building Your Solver",
+            "pages": [
+              "guides/architecture",
+              "guides/implementing-solve",
+              "guides/working-with-data"
+            ]
+          },
+          {
+            "group": "Deployment",
+            "pages": [
+              "deployment/docker",
+              "deployment/connecting-orderbook",
+              "deployment/testing"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Server",
+            "pages": [
+              "api/endpoints",
+              "api/solver-args"
+            ]
+          },
+          {
+            "group": "Data Models",
+            "pages": [
+              "api/batch-auction",
+              "api/order",
+              "api/token",
+              "api/uniswap"
+            ]
+          },
+          {
+            "group": "Utilities",
+            "pages": [
+              "api/schema",
+              "api/constants"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "FastAPI-based HTTP server framework",
+    "Complete data models for batch auctions, orders, and tokens",
+    "Support for Uniswap-style AMM integration",
+    "Docker deployment ready",
+    "Integration with CoW Protocol driver",
+    "Extensible solver implementation"
+  ],
+  "publicApiSurface": [
+    "POST /solve",
+    "POST /notify",
+    "GET /health",
+    "BatchAuction.from_dict()",
+    "BatchAuction.solve()",
+    "Order.from_dict()",
+    "Order.execute()",
+    "Token",
+    "Uniswap.from_dict()",
+    "SolverArgs.from_request()"
+  ]
+}
